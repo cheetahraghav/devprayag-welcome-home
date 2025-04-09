@@ -10,20 +10,20 @@ const Gallery = () => {
       id: 1,
       src: "/lovable-uploads/fbbf7731-865e-400d-99b1-aed902e75bd8.png",
       alt: "Original Family Photo",
-      caption: "Our Family Photo"
+      caption: "Owners"
     },
     {
       id: 2,
       src: "/lovable-uploads/31cb75c3-ca2e-48a4-844e-b3eff9f68bfd.png",
       alt: "Illustrated Family Portrait",
-      caption: "Our Illustrated Family Portrait"
+      caption: "Ghibli"
     },
     {
       id: 3,
-      src: "/placeholder.svg",
-      alt: "Thiruporur Murugar (Coming Soon)",
-      caption: "Thiruporur Murugar (Coming Soon)",
-      placeholder: true
+      src: "/lovable-uploads/e64df5e9-fbe4-4d64-859b-3e51b70dd0f0.png",
+      alt: "Thiruporur Murugar",
+      caption: "Thiruporur Murugar",
+      placeholder: false
     }
   ];
   
@@ -44,7 +44,7 @@ const Gallery = () => {
           {images.map((image) => (
             <div
               key={image.id}
-              className={`ceremony-card overflow-hidden flex flex-col ${
+              className={`ceremony-card overflow-hidden flex flex-col border-2 border-ceremony-gold/30 ${
                 image.placeholder ? "bg-ceremony-pastel-pink/20" : ""
               }`}
             >
