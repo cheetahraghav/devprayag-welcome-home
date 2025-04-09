@@ -20,9 +20,9 @@ const Gallery = () => {
     },
     {
       id: 3,
-      src: "/lovable-uploads/d8f2dfd6-4739-4d35-8df1-f77feedcbb4b.png",
+      src: "/lovable-uploads/6a49bfd8-3549-4e41-81c1-e4ada5dbd73d.png",
       alt: "Deity Image",
-      caption: "Devprayag"
+      caption: "Muruga"
     }
   ];
   
