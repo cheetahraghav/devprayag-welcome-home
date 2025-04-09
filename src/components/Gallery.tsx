@@ -43,24 +43,15 @@ const Gallery = () => {
           {images.map((image) => (
             <div
               key={image.id}
-              className={`ceremony-card overflow-hidden flex flex-col border-2 border-ceremony-gold/30 ${
-                image.placeholder ? "bg-ceremony-pastel-pink/20" : ""
-              }`}
+              className="ceremony-card overflow-hidden flex flex-col border-2 border-ceremony-gold/30"
             >
               <div className="relative pb-[75%] overflow-hidden rounded-lg mb-3">
                 <img
                   src={image.src}
                   alt={image.alt}
-                  onClick={() => !image.placeholder && handleImageClick(image.src)}
-                  className={`absolute h-full w-full object-cover transition-transform ${
-                    image.placeholder ? "" : "hover:scale-105 cursor-pointer"
-                  } ${image.placeholder ? "opacity-40" : ""}`}
+                  onClick={() => handleImageClick(image.src)}
+                  className="absolute h-full w-full object-cover transition-transform hover:scale-105 cursor-pointer"
                 />
-                {image.placeholder && (
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <span className="text-lg font-medium text-gray-500">Coming Soon</span>
-                  </div>
-                )}
               </div>
               <p className="text-center text-sm font-medium">{image.caption}</p>
             </div>
