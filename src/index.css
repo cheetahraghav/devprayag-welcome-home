@@ -49,6 +49,11 @@
     @apply bg-ceremony-cream text-foreground font-montserrat;
     font-feature-settings: "ss01";
     scroll-behavior: smooth;
+    background-image: url('/lovable-uploads/251a912c-b604-439b-ba83-c0b43eafe9cd.png');
+    background-size: 150px;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-blend-mode: soft-light;
   }
 
   .playfair {
@@ -83,10 +88,12 @@
   
   .section-title {
     @apply font-playfair text-3xl md:text-4xl lg:text-5xl font-bold text-ceremony-maroon mb-6 text-center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
   }
   
   .ceremony-card {
-    @apply bg-white rounded-xl p-6 shadow-md border border-ceremony-pastel-orange/30;
+    @apply bg-white/95 rounded-xl p-6 shadow-md border border-ceremony-pastel-orange/30 backdrop-blur-sm;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05), 0 4px 12px rgba(212, 175, 55, 0.08);
   }
   
   .button-primary {
@@ -104,6 +111,10 @@
   .input-field {
     @apply w-full border border-ceremony-pastel-orange/40 rounded-lg p-3 focus:outline-none 
            focus:ring-2 focus:ring-ceremony-gold/50 font-montserrat text-sm;
+  }
+
+  .section-container {
+    @apply relative backdrop-blur-sm bg-white/40 rounded-2xl p-6 border border-ceremony-gold/20;
   }
 }
 
@@ -132,4 +143,47 @@
 
 .glowing {
   filter: drop-shadow(0 0 4px rgba(212, 175, 55, 0.4));
+}
+
+/* Add beautiful section backgrounds with subtle gradients */
+section {
+  position: relative;
+}
+
+section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(circle at top right, rgba(255,255,255,0.8), transparent),
+                    radial-gradient(circle at bottom left, rgba(212,175,55,0.1), transparent);
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Add decorative corner flourishes to sections */
+.section-padding::before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 30px;
+  height: 30px;
+  border-top: 2px solid rgba(212,175,55,0.3);
+  border-left: 2px solid rgba(212,175,55,0.3);
+  z-index: 1;
+}
+
+.section-padding::after {
+  content: '';
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+  border-bottom: 2px solid rgba(212,175,55,0.3);
+  border-right: 2px solid rgba(212,175,55,0.3);
+  z-index: 1;
 }
