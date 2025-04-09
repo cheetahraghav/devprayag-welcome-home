@@ -15,7 +15,7 @@ const ContactSection = () => {
       color: "bg-pink-500"
     },
     {
-      name: "Shakthi (Dushyantram)",
+      name: "Dushyantram(shakthi)",
       phone: "9360991527",
       color: "bg-blue-500"
     },
