@@ -1,4 +1,3 @@
-
 import { Phone, MessageCircle } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -10,7 +9,7 @@ const ContactSection = () => {
       color: "bg-emerald-500"
     },
     {
-      name: "Amma (Rathi)",
+      name: "Rathi",
       phone: "9941492162",
       color: "bg-pink-500"
     },
@@ -20,7 +19,7 @@ const ContactSection = () => {
       color: "bg-blue-500"
     },
     {
-      name: "Dad (Asokan)",
+      name: "Asokan",
       phone: "9840910655",
       color: "bg-amber-500"
     }

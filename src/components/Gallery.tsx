@@ -9,8 +9,8 @@ const Gallery = () => {
     {
       id: 1,
       src: "/lovable-uploads/fbbf7731-865e-400d-99b1-aed902e75bd8.png",
-      alt: "Original Family Photo",
-      caption: "Owners"
+      alt: "Family Photo",
+      caption: "ABD's"
     },
     {
       id: 2,
@@ -20,10 +20,9 @@ const Gallery = () => {
     },
     {
       id: 3,
-      src: "/lovable-uploads/e64df5e9-fbe4-4d64-859b-3e51b70dd0f0.png",
-      alt: "Thiruporur Murugar",
-      caption: "Thiruporur Murugar",
-      placeholder: false
+      src: "/lovable-uploads/d8f2dfd6-4739-4d35-8df1-f77feedcbb4b.png",
+      alt: "Deity Image",
+      caption: "Devprayag"
     }
   ];
   
